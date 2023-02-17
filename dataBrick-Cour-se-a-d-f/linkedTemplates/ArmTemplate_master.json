@@ -7,9 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "dataBrick-Cour-se-a-d-f"
 		},
+		"ls_f1_dl_storage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_f1_dl_storage'"
+		},
 		"ls_databricks_course_ws_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0214-220554-rtl6zlwv"
+		},
+		"ls_f1_dl_storage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://databricksstorageacount.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +46,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_f1_dl_storage_accountKey": {
+						"value": "[parameters('ls_f1_dl_storage_accountKey')]"
+					},
 					"ls_databricks_course_ws_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('ls_databricks_course_ws_properties_typeProperties_existingClusterId')]"
+					},
+					"ls_f1_dl_storage_properties_typeProperties_url": {
+						"value": "[parameters('ls_f1_dl_storage_properties_typeProperties_url')]"
 					}
 				}
 			},

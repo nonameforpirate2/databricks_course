@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "dataBrick-Cour-se-a-d-f"
 		},
+		"ls_f1_dl_storage_accountKey": {
+			"value": ""
+		},
 		"ls_databricks_course_ws_properties_typeProperties_existingClusterId": {
 			"value": "0214-220554-rtl6zlwv"
+		},
+		"ls_f1_dl_storage_properties_typeProperties_url": {
+			"value": "https://databricksstorageacount.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
